@@ -23,9 +23,9 @@ chart_args['chd'] = dataString
 
 chartUrl = CHART_BASE_URL + '?' + chart_args.to_query
 
-puts("")
-puts("Elevation Chart URL:")
-puts("")
+puts
+puts "Elevation Chart URL:"
+puts 
 
 print chartUrl
 end    
@@ -53,10 +53,10 @@ getChart(chartData=elevationArray)
 end
 
 puts
-puts("Elevation Chart Maker 1.0")
+puts "Elevation Chart Maker 1.0"
 puts
-puts("The following service calculates elevation data between two points")
-puts("and builds an HTTP chart using Google's Elevation service and Chart API")
+puts "The following service calculates elevation data between two points"
+puts "and builds an HTTP chart using Google's Elevation service and Chart API"
 puts
 
 if __FILE__ == $0
@@ -64,7 +64,7 @@ if __FILE__ == $0
 # Collect the Latitude/Longitude input string
 # from the user
 
-puts("Enter the start latitude,longitude value (default Mt. Whitney) --> ")
+puts "Enter the start latitude,longitude value (default Mt. Whitney) --> "
 #chomp - koncówka łancucha jest obcinana tylko wtedy, gdy jest znakiem konca linii
 startStr = gets.gsub(' ','').chomp
 
